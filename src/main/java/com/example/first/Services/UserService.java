@@ -20,5 +20,14 @@ public class UserService {
     public UserModel getUserById(int id){
         return userRepository.getUserById(id);
     }
+    public UserModel addUser(UserModel user){
+        return userRepository.addUser(user);
+    }
+    public UserModel deleteUserModel(int id){
+        return userRepository.deleteUserModel(id);
+    }
+    public UserModel updateUser(int id, UserModel user){
+        return userRepository.updateUser(id, user);
+    }
 
 }
