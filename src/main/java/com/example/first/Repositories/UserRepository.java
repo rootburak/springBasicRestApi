@@ -17,4 +17,13 @@ public class UserRepository {
         return users;
     }
 
+    public UserModel getUserById(int id){
+        for(UserModel model : users){
+            if(model.getUserId() == id){
+                return model;
+            }  
+        }
+        return null;
+    }
+
 }

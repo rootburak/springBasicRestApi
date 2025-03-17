@@ -12,6 +12,9 @@ public class UserModel {
         this.username = username;
         this.password = password;
     }
+    public UserModel() {
+    }
+
 
     public int getUserId() {
         return userId;
